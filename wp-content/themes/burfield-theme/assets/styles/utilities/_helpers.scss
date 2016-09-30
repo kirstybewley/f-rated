@@ -1,0 +1,221 @@
+// .helpers.scss
+
+.island {
+  padding-top: em($grid-gutter-l);
+  padding-bottom: em($grid-gutter-l);
+}
+
+.island-top {
+  padding-top: em($grid-gutter-l);
+  padding-bottom: 0;
+}
+
+.island-top-half {
+  padding-top: em($grid-gutter);
+  padding-bottom: 0;
+}
+
+.island-bottom {
+  padding-top: 0;
+  padding-bottom: em($grid-gutter-l);
+}
+
+.island-bottom-half {
+  padding-top: 0;
+  padding-bottom: em($grid-gutter);
+}
+
+.island-half {
+  padding-top: em($grid-gutter);
+  padding-bottom: em($grid-gutter);
+}
+
+.island-double {
+  padding-top: em($grid-gutter * 4);
+  padding-bottom: em($grid-gutter * 4);
+}
+
+.island-xl {
+  @extend .island;
+}
+
+@include breakpoint(s) {
+  .island-xl {
+    padding-top: em($grid-gutter * 10);
+    padding-bottom: em($grid-gutter * 10);
+  }
+}
+
+//these use margin rather then padding
+.island-margin {
+  margin-top: em($grid-gutter-l);
+  margin-bottom: em($grid-gutter-l);
+}
+
+.island-top-margin {
+  margin-top: em($grid-gutter-l);
+  padding-bottom: 0;
+}
+
+.island-top-margin-half {
+  margin-top: em($grid-gutter);
+  padding-bottom: 0;
+}
+
+.island-half-margin {
+  margin-top: em($grid-gutter);
+  margin-bottom: em($grid-gutter);
+}
+
+.island-bottom-margin {
+  margin-top: 0;
+  margin-bottom: em($grid-gutter-l);
+}
+
+
+.island-bottom-margin-half {
+  margin-top: 0;
+  margin-bottom: em($grid-gutter);
+}
+
+.island-dark {
+  background: $tcolor;
+}
+
+.island-pcolor {
+  background: $pcolor;
+}
+
+.island-scolor {
+  background: $scolor;
+}
+
+.island-tcolor {
+  background: $tcolor;
+}
+
+.island-quatcolor {
+  background: $quatcolor;
+}
+
+.island-white {
+  background: $white;
+}
+
+.text-light {
+  color: $white;
+}
+
+.text-dark {
+  color: $dark;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.clear {
+  clear: both;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  width: auto !important;
+  display: block;
+}
+
+.overflow {
+  overflow: hidden;
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+// Display Types
+.none {
+  display: none;
+}
+.block {
+  display: block;
+}
+.inline-block {
+  display: inline-block;
+}
+.inline {
+  display: inline;
+}
+
+.float-right {
+  float: right !important;
+}
+
+.float-left {
+  float: left !important;
+}
+
+// Tablet Helpers
+@include breakpoint(m) {
+  // Display Types
+  .none-m { display: none; }
+  .block-m { display: block; }
+  .inline-block-m { display: inline-block; }
+  .inline-m { display: inline; }
+}
+
+// Desktop Helpers
+@include breakpoint(l) {
+  // Display Types
+  .none-l { display: none; }
+  .block-l { display: block; }
+  .inline-block-l { display: inline-block; }
+  .inline-l { display: inline; }
+}
+
+// HD Helpers
+@include breakpoint(xl) {
+  // Display Types
+  .none-xl { display: none; }
+  .block-xl { display: block; }
+  .inline-block-xl { display: inline-block; }
+  .inline-xl { display: inline; }
+}
+
+// Positions
+.relative { position: relative; }
+.absolute { position: absolute; }
+.static { position: static; }
+.fixed { position: fixed; }

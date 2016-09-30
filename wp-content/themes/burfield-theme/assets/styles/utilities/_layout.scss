@@ -1,0 +1,31 @@
+body.no-sidebars {
+  main {
+    @extend .col-12;
+  }
+}
+
+body.one-sidebar {
+  main {
+    @extend .col-12;
+    @extend .col-8-m;
+  }
+
+  aside.sidebar-right,
+  aside.sidebar-left {
+    @extend .col-12;
+    @extend .col-4-m;
+  }
+}
+
+body.two-sidebars {
+  main {
+    @extend .col-12;
+    @extend .col-6-m;
+  }
+
+  aside.sidebar-right,
+  aside.sidebar-left {
+    @extend .col-12;
+    @extend .col-3-m;
+  }
+}

@@ -1,0 +1,9 @@
+footer.footer {
+  color: $tcolor;
+  background: $scolor;
+
+  .footer-col-1,
+  .footer-col-2 {
+    border-right: 1px solid $tcolor;
+  }
+}

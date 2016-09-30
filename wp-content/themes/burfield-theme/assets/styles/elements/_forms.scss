@@ -1,0 +1,60 @@
+// _forms.scss
+
+%text-input {
+  display: block;
+  width: 100%;
+  padding: em(12px);
+  font-size: $font-size-base;
+  background: $tcolor;
+  border: 0;
+}
+
+fieldset {
+  margin: em($grid-gutter) 0;
+  padding: em($grid-gutter);
+}
+
+label {
+  margin: 0 em($grid-gutter) em($grid-gutter) 0;
+  display: inline-block;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: 1px solid $scolor;
+  outline-offset: -1px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="url"],
+textarea {
+  @extend %text-input;
+}
+
+input[type="search"] {
+  @extend %text-input;
+}
+
+input[type="submit"] {
+  @extend %buttons;
+  @include button($pcolor);
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: $scolor;
+  opacity: 1;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: $scolor;
+  opacity: 1;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: $scolor;
+  opacity: 1;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: $scolor;
+  opacity: 1;
+}

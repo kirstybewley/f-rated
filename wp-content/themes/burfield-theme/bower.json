@@ -1,0 +1,27 @@
+{
+  "name": "sage",
+  "homepage": "https://roots.io/sage/",
+  "authors": [
+    "Ben Word <ben@benword.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "base": "2.8.0",
+    "slick.js": "1.5.9"
+  },
+  "overrides": {
+    "base": {
+      "main": [
+        "./assets/src/scss/style.scss"
+      ]
+    },
+    "slick.js": {
+      "main": [
+        "slick/slick.min.js",
+        "slick/slick.css",
+        "slick/fonts/*"
+      ]
+    }
+  }
+}

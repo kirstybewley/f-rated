@@ -1,0 +1,114 @@
+// primary, secondary, tertiary, quaternary, quinary, senary, septenary, octonary, nonary, and denary
+
+// primary color
+$pcolor:                                        #BD1823; // brand
+//secondary color
+$scolor:                                        #585856;
+// tertiary
+$tcolor:                                        #9D9C9B;
+// quaternary
+$quatcolor:                                     #F6F6F6;
+// quinary
+$quincolor:                                     #000;
+// senary
+$sencolor:                                      #000;
+// septenary
+$sepcolor:                                      #000;
+// octonary
+$octcolor:                                      #000;
+// nonary
+$noncolor:                                      #000;
+// denary
+$dencolor:                                      #000;
+
+
+$white:                                         #ffffff;
+$dark-gray:                                     #5F5F5F;
+$gray:                                          #979797;
+$light-gray:                                    #D8D8D8;
+$dark:                                          #000000;
+
+
+.bg {
+  &-pcolor {
+    background-color: $pcolor !important;
+  }
+  &-scolor {
+    background-color: $scolor !important;
+  }
+  &-tcolor {
+    background-color: $tcolor !important;
+  }
+  &-quatcolor {
+    background-color: $quatcolor !important;
+  }
+  &-quincolor {
+    background-color: $quincolor !important;
+  }
+  &-sencolor {
+    background-color: $sencolor !important;
+  }
+  &-sepcolor {
+    background-color: $sepcolor !important;
+  }
+  &-octcolor {
+    background-color: $octcolor !important;
+  }
+  &-noncolor {
+    background-color: $noncolor !important;
+  }
+  &-dencolor {
+    background-color: $dencolor !important;
+  }
+  &-dark-gray {
+    background-color: $dark-gray !important;
+  }
+  &-gray {
+    background-color: $gray !important;
+  }
+  &-light-gray {
+    background-color: $light-gray !important;
+  }
+}
+
+.text {
+  &-pcolor {
+    color: $pcolor !important;
+  }
+  &-scolor {
+    color: $scolor !important;
+  }
+  &-tcolor {
+    color: $tcolor !important;
+  }
+  &-quatcolor {
+    color: $quatcolor !important;
+  }
+  &-quincolor {
+    color: $quincolor !important;
+  }
+  &-sencolor {
+    color: $sencolor !important;
+  }
+  &-sepcolor {
+    color: $sepcolor !important;
+  }
+  &-octcolor {
+    color: $octcolor !important;
+  }
+  &-noncolor {
+    color: $noncolor !important;
+  }
+  &-dencolor {
+    color: $dencolor !important;
+  }
+  &-dark-gray {
+    color: $dark-gray !important;
+  }
+  &-gray {
+    color: $gray !important;
+  }
+  &-light-gray {
+    color: $light-gray !important;
+  }
+}

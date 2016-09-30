@@ -1,0 +1,61 @@
+// _vars.scss
+$font-size-base:                                16px;
+
+@function em($pixels, $context: $font-size-base) {
+  @return #{$pixels/$context}em;
+}
+
+$border:                                        1px dashed $gray;
+$border-solid:                                  2px solid $quincolor;
+
+// Responsive Breakpoints - Mobile first
+$breakpoint-s:                                  501px !default;
+$breakpoint-m:                                  768px !default;
+$breakpoint-l:                                  1025px !default;
+$breakpoint-xl:                                 1160px !default;
+
+// Grid Containers
+$container:                                     100% !default;
+$container-max-width:                           1400px !default;
+
+// Grid Gutters
+$grid-gutter:                                   16px !default;
+$grid-gutter-m:                                 $grid-gutter !default;
+$grid-gutter-l:                                 26px !default;
+$grid-gutter-xl:                                $grid-gutter !default;
+
+// Breakpoint sizes
+// Example usage @include breakpoint(x) { ... }; - where x is the device
+@mixin breakpoint($bp) {
+  @if $bp == xl {
+    @media only screen and (min-width: $breakpoint-xl) { @content ; }
+  }
+  @else if $bp == l {
+    @media only screen and (min-width: $breakpoint-l) { @content ; }
+  }
+  @else if $bp == m {
+    @media only screen and (min-width: $breakpoint-m) { @content ; }
+  }
+  @else if $bp == s {
+    @media only screen and (min-width: $breakpoint-s) { @content ; }
+  }
+}
+
+@mixin upto-breakpoint($bp) {
+  @if $bp == xl {
+    @media only screen and (max-width: $breakpoint-xl - 1) { @content ; }
+  }
+  @else if $bp == l {
+    @media only screen and (max-width: $breakpoint-l - 1) { @content ; }
+  }
+  @else if $bp == m {
+    @media only screen and (max-width: $breakpoint-m - 1) { @content ; }
+  }
+  @else if $bp == s {
+    @media only screen and (max-width: $breakpoint-s - 1) { @content ; }
+  }
+}
+
+@mixin between-breakpoint($bp-from, $bp-to) {
+  @media only screen and (min-width: $bp-from) and (max-width: $bp-to - 1) { @content ; }
+}
