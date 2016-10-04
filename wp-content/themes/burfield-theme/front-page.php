@@ -13,16 +13,16 @@
         <h3>WHERE ARE THE WOMEN?</h3>
         <p>In the top 100 films of 2014 women made up just:</p>
 
-        <div class="col-12 col-4-s">
-          <h3>1.9%</h3>
+        <div class="col-12 col-4-s number-col-1">
+          <h3 class="large-text weight-300">1.9%</h3>
           <p>of ALL directors</p>
         </div>
-        <div class="col-12 col-4-s">
-          <h3>11.2%</h3>
+        <div class="col-12 col-4-s number-col-2">
+          <h3 class="large-text weight-300">11.2%</h3>
           <p>of ALL writers</p>
         </div>
-        <div class="col-12 col-4-s">
-          <h3>18.9%</h3>
+        <div class="col-12 col-4-s number-col-3">
+          <h3 class="large-text weight-300">18.9%</h3>
           <p>of ALL producers</p>
         </div>
       </div>
@@ -33,8 +33,8 @@
   <!-- tagline section -->
   <section>
     <div class="row">
-      <div class="col-12 island island-tcolor text-light text-center">
-        <h3>IT’S TIME FOR <strong>BETTER FEMALE ROLE MODELS</strong> IN FILM, <strong>FAIRER FUNDING</strong> FOR FEMALE DIRECTORS AND A REALISTIC REPRESENTATION OF <strong>50% OF THE POPULATION</strong> ON SCREEN</h3>
+      <div class="col-12 island island-tcolor text-light text-center home-strapline">
+        <h3 class="weight-100 col-10-m center-element">IT’S TIME FOR <strong>BETTER FEMALE ROLE MODELS</strong> IN FILM, <strong>FAIRER FUNDING</strong> FOR FEMALE DIRECTORS AND A REALISTIC REPRESENTATION OF <strong>50% OF THE POPULATION</strong> ON SCREEN</h3>
       </div>
     </section>
     <!-- /section -->
@@ -43,14 +43,14 @@
       <div class="row">
         <div class="col-12 col-6-m teaser">
           <a href="<?php echo esc_url( get_the_permalink(9) ); ?>"></a>
-          <img src="<?php echo get_template_directory_uri(); ?>/img/rated/Image-82.jpg" />
+          <img src="<?php echo get_template_directory_uri(); ?>/img/rated/about.jpg" />
           <div class="title border">
             <h3>About F-Rated</h3>
           </div>
         </div>
         <div class="col-12 col-6-m teaser">
           <a href="<?php echo esc_url( get_the_permalink(13) ); ?>"></a>
-          <img src="<?php echo get_template_directory_uri(); ?>/img/rated/Image-82.jpg" />
+          <img src="<?php echo get_template_directory_uri(); ?>/img/rated/films.jpg" />
           <div class="title border">
             <h3>F-Rated Film</h3>
           </div>
@@ -58,28 +58,28 @@
         </div>
         <div class="col-12 col-6-m teaser">
           <a href="<?php echo esc_url( get_the_permalink(15) ); ?>"></a>
-          <img src="<?php echo get_template_directory_uri(); ?>/img/rated/Image-82.jpg" />
+          <img src="<?php echo get_template_directory_uri(); ?>/img/rated/allies.jpg" />
           <div class="title border">
             <h3>F-Rated Allies</h3>
           </div>
         </div>
         <div class="col-12 col-6-m teaser">
           <a href="<?php echo esc_url( get_the_permalink(17) ); ?>"></a>
-          <img src="<?php echo get_template_directory_uri(); ?>/img/rated/Image-82.jpg" />
+          <img src="<?php echo get_template_directory_uri(); ?>/img/rated/we.jpg" />
           <div class="title border">
             <h3>We F-Rate</h3>
           </div>
         </div>
         <div class="col-12 col-6-m teaser">
           <a href="<?php echo esc_url( get_the_permalink(11) ); ?>"></a>
-          <img src="<?php echo get_template_directory_uri(); ?>/img/rated/Image-82.jpg" />
+          <img src="<?php echo get_template_directory_uri(); ?>/img/rated/news.jpg" />
           <div class="title border">
             <h3>F-Rated News</h3>
           </div>
         </div>
         <div class="col-12 col-6-m teaser">
           <a href="#"></a>
-          <img src="<?php echo get_template_directory_uri(); ?>/img/rated/Image-82.jpg" />
+          <img src="<?php echo get_template_directory_uri(); ?>/img/rated/needs.jpg" />
           <div class="title border">
             <h3>F-Rated Needs You</h3>
           </div>

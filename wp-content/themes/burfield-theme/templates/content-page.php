@@ -1,7 +1,7 @@
 <!--  main -->
-<main role="main">
+<main role="main" class="island">
   <!-- Header section -->
-  <?php get_template_part('templates/section-highlighted'); ?>
+  <?php// get_template_part('templates/section-highlighted'); ?>
   <!-- /section -->
 
   <!-- section -->
@@ -10,7 +10,8 @@
     <?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
       <!-- article -->
-      <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+      <article id="post-<?php the_ID(); ?>" <?php post_class('col-12'); ?>>
+        <h1 class="clear island-bottom-half"><?php the_title(); ?></h1>
 
         <?php the_content(); ?>
 

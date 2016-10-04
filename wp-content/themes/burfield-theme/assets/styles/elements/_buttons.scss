@@ -5,6 +5,8 @@
   font-size: $font-size-base;
   display: inline-block;
   text-align: center;
+  font-weight: 500;
+  font-family: $font-family-sans-2;
 
   &:hover {
     text-decoration: none;
@@ -34,4 +36,9 @@
 
 .btn-primary {
   @include button($pcolor);
+}
+
+.btn-secondary {
+  @include button($quincolor);
+  color: $pcolor;
 }

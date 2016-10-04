@@ -63,15 +63,19 @@
 .teaser {
   position: relative;
   overflow: hidden;
+  background: $pcolor;
+  min-height: 240px;
 
   @include breakpoint(m) {
     padding-bottom: 56%;
+    opacity: 1;
+    transition: opacity .3s ease;
 
     &[class*='col-6'] {
       padding-bottom: 28%;
     }
 
-    a {
+    a, .overlay {
       position: absolute;
       z-index: 2;
       top: 0;
@@ -97,13 +101,18 @@
       z-index: 3;
       top: 50%;
       left: 50%;
-      width: 300px;
+      width: 100%;
+      max-width: 360px;
       padding: 15px;
       transform: translate(-50%, -50%);
       text-align: center;
       pointer-events: none;
       color: white;
-      
+
+      .hovers {
+        transform: scale(0,0);
+      }
+
       &.border {
         border: 1px solid;
       }
@@ -113,11 +122,40 @@
         margin: 0;
       }
     }
+
+    &:hover {
+      img, a, .overlay {
+        opacity: 0;
+        transition: opacity .3s ease;
+      }
+    }
   }
 
   @include breakpoint(l) {
     &[class*='col-4'] {
       padding-bottom: 18.66%;
+    }
+  }
+
+  // Mobile
+  @include upto-breakpoint(m) {
+    padding: 0;
+    //margin-bottom: $grid-gutter;
+    a, .overlay {
+      position: absolute;
+      z-index: 2;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      display: block;
+    }
+
+    .title {
+      text-align: center;
+      background: $pcolor;
+      color: white;
+      padding: 20px 10px;
     }
   }
 }

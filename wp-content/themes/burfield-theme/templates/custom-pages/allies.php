@@ -64,7 +64,7 @@ $testargs = array(
   <section>
     <div class="row">
       <div class="col-12 island-top island-quatcolor text-center">
-        <h2>SOME OF OUR ALLIES INCLUDE</h2>
+        <h2 class="island-bottom-half">SOME OF OUR ALLIES INCLUDE</h2>
 
         <div class="row">
           <?php
@@ -74,13 +74,29 @@ $testargs = array(
 
             ?>
             <?php while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
+
+              <?php
+              $link = get_field('website');
+
+              ?>
               <div class="col-12 col-6-m col-4-l teaser">
-                <a href="<?php the_permalink(); ?>"></a>
+                <?php if(!empty($link)): ?>
+                  <a href="<?php print $link; ?>" target="_blank"></a>
+                <?php else: ?>
+                  <span class="overlay"></span>
+                <?php endif; ?>
                 <img src="<?php echo the_post_thumbnail_url() ?>" />
-                <div class="title border">
+                <div class="title">
                   <h3><?php the_title(); ?></h3>
+                  <p>
+                    <?php echo wp_trim_words( strip_tags(get_the_content()), 20, '...' ); ?>
+                  </p>
+                  <?php if(!empty($link)): ?>
+                    <p class="text-quincolor"><?php print $link; ?></p>
+                  <?php endif; ?>
                 </div>
               </div>
+
             <?php endwhile; ?>
             <!-- /section -->
           <?php endif; wp_reset_query(); ?>

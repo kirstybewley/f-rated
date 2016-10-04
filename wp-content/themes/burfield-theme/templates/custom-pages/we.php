@@ -25,7 +25,7 @@ $joinsargs = array(
   <section>
     <div class="row">
       <div class="col-12 island-top island-quatcolor text-center">
-        <h2>OVER 40 FILM FESTIVALS AND CINEMAS HAVE JOINED SO FAR:</h2>
+        <h2 class="island-bottom-half">OVER 40 FILM FESTIVALS AND CINEMAS HAVE JOINED SO FAR:</h2>
 
         <div class="row">
           <?php
@@ -36,9 +36,10 @@ $joinsargs = array(
             ?>
             <?php while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
               <div class="col-12 col-6-m col-4-l teaser">
-                <a href="<?php the_permalink(); ?>"></a>
+                <!-- <a href="<?php the_permalink(); ?>"></a> -->
+                <span class="overlay"></span>
                 <img src="<?php echo the_post_thumbnail_url() ?>" />
-                <div class="title border">
+                <div class="title">
                   <h3><?php the_title(); ?></h3>
                 </div>
               </div>

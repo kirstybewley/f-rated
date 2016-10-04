@@ -13,7 +13,7 @@
       <?php endif; ?>
       <!-- /post thumbnail -->
 
-      <h1 class="clear island-bottom"><?php the_title(); ?></h1>
+      <h1 class="clear island-bottom-half"><?php the_title(); ?></h1>
 
       <!-- article -->
       <article id="post-<?php the_ID(); ?>" class="island-bottom">

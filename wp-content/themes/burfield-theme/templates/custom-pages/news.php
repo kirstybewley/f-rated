@@ -48,6 +48,18 @@ $snewsargs = array(
         <p>
           <?php echo wp_trim_words( strip_tags(get_the_content()), 100, '...' ); ?>
         </p>
+
+        <?php
+          $title = get_the_title();
+          $url = get_the_permalink();
+        ?>
+
+        <div class="social-media share-this island-top">
+          <ul class="inline social">
+            <li><a href="https://twitter.com/share?url=<?php print $url; ?>&amp;text=<?php print urlencode($title); ?>&amp;via=F__Rating" target="_blank"><span class="icon icon-twitter"></span><span class="visually-hidden">Twitter</span></a></li>
+            <li><a href="http://www.facebook.com/sharer.php?u=<?php print $url; ?>" target="_blank"><span class="icon icon-facebook"></span><span class="visually-hidden">Facebook</span></a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>

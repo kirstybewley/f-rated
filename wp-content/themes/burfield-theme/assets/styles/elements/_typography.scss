@@ -1,11 +1,11 @@
 //* -----  Font family  ----- */
-@font-face {}
 
-$font-family-sans:             sans-serif;
+$font-family-sans:             'Droid Sans', sans-serif;
+$font-family-sans-2:           'museo-sans',  sans-serif;
 $font-family-serif:            serif;
 
 $font-family-base:             $font-family-sans;
-$font-family-headings:         $font-family-sans;
+$font-family-headings:         $font-family-sans-2;
 
 //* -----  Font size  ----- */
 // $font-size-base = 18px
@@ -32,7 +32,7 @@ $font-size-large:              em(20px);
 /* -----  Headings  ----- */
 %headings {
   font-family: $font-family-headings;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 1.2;
 	margin-top: 0;
   margin-bottom: $grid-gutter;
@@ -68,7 +68,7 @@ h5, .h5 {
   font-size: $font-size-h5;
 }
 
-h6 .h6 {
+h6, .h6 {
   @extend %headings;
   font-size: $font-size-h6;
 }
